@@ -1,6 +1,7 @@
 -->DragonHubV1
 -->Block Shitty Executors
 local Executor=identifyexecutor();
+local SupportedExecutors={'Synapse X','ScriptWare','Krnl'};
 local Supported=table.find(SupportedExecutors,Executor)~=nil;
 assert(Supported,'Executor Not Supported');
 
@@ -2367,6 +2368,10 @@ DupeInventory=AxeModifications:CreateToggle('Dupe Inventory',false,function(togg
 local AxeOptions=AxeSection:CreateSubSection('Axe Options');
 AxeOptions:CreateButton('Drop All Tools',function()Ancestor:DropTools();end,true,true,'Drops All Your Tools.');
 
+local BuildTab=AncestorUI:CreateTab(8772073607,'Build Options');
+local BuildSection=BuildTab:CreateSection()
+local BuildMode=BuildSection:CreateSubSection('Build Mode - Currently Under Development');
+
 local CarTab=AncestorUI:CreateTab(8821528672,'Car Options');
 local CarSection=CarTab:CreateSection()
 local CarMods=CarSection:CreateSubSection('Vehicle Options');
@@ -2380,7 +2385,7 @@ CarMods:CreateToggle('Activate Car Modifications',false,function(toggle)GUISetti
 local SettingsMain=AncestorUI:CreateTab(5182003557,'Settings');
 local SettingsSection=SettingsMain:CreateSection();
 local Credits=SettingsSection:CreateSubSection('Credits');
-Credits:CreateLabel'Made By xsp and code by ancester(all made by ancester i just changed the code a little)';
+Credits:CreateLabel'Made By xsp';
 local GUIInfo=SettingsSection:CreateSubSection('GUI Information');
 GUIInfo:CreateLabel('Version: '..tstring(CurrentVersion));
 GUIInfo:CreateLabel('Executor: '..tstring(Executor));

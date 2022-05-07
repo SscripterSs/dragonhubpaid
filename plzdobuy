@@ -1,6 +1,7 @@
 -->DragonHubV1
 -->Block Shitty Executors
 local Executor=identifyexecutor();
+local SupportedExecutors={'Synapse X','ScriptWare','Krnl'};
 local Supported=table.find(SupportedExecutors,Executor)~=nil;
 assert(Supported,'Executor Not Supported');
 

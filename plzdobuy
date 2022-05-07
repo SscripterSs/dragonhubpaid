@@ -1,11 +1,4 @@
 -->DragonHubV1
--->Block Shitty Executors
-local Executor=identifyexecutor();
-local SupportedExecutors={'Synapse X','ScriptWare','Krnl'};
-local Supported=table.find(SupportedExecutors,Executor)~=nil;
-assert(Supported,'Executor Not Supported');
-
-
 -->Init
 local Start,Is_Client_Loaded=os.time(),false,nil;
 local dragonhub,Connections,GUISettings,CurrentVersion,dragonhub_Loaded={MoneyDuping=false,DupeAxeBeforeModerationAction=false,ModerationAction='Kick',PlayerToModerate=game.Players.LocalPlayer,BaseToDupe=1,SelectedTreeType='Generic',BringTreeAmount=1},{},{NewDonateBase=false,Spook=false,WalkSpeed=16,JumpPower=50,HipHeight=0,SprintSpeed=20,FOV=70,SelectedPlot=1,InfiniteJump=false,SelectedDropType='Both',Light=false,SprintKey='LeftShift',NoclipKey='LeftControl',KeyTP='G',FastCheckout=false,FixCashierRange=false,HardDragger=false,AxeRangeActive=false,AxeSwingActive=false,FlyKey='F',WaterWalk=false,WaterFloat=true,FlySprintSpeed=10,AlwaysDay=false,AlwaysNight=false,NoFog=false,DisableSaving=true,AxeSwing=0,AxeRange=0,FastDeloader=true,IsClientFlying=false,Fling=false,FlySpeed=50,ActivateCarModifications=false,CarSpeed=1,CarPitch=1,AlertShutdown=false,AntiAFK=false},loadstring(game:HttpGetAsync'https://raw.githubusercontent.com/SscripterSs/Version.lua/lua/lua')(),true;
